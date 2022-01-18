@@ -1,0 +1,88 @@
+/* Notification button CSS */
+.notificationWrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.hideNotification{
+    display: none;
+}
+
+.notificationHeadline {
+    margin: 20px 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@media (min-width: 540px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 539px) {
+    .notificationButton {
+        width: 98%;
+        margin-bottom: 10%;
+    }
+}
+
+/* Modal Form CSS */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalHeadline{
+    margin: 5px 0px;
+}
+
+.modal-content {
+    width: 30%;
+    min-width: 250px;
+    min-height: 260px;;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    background-color: #fefefe;
+}
+
+.close {
+    color: #aaa;
+    align-self: end;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.customError {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #c00;
+}

@@ -1,0 +1,54 @@
+<iscomment>
+    Button component
+</iscomment>
+<div class="notificationWrapper">
+    <button class="btn btn-danger notificationButton btn-backInStock hide" data-toggle="modal" data-target="#chooseBonusProductModal"
+        data-pid="${product.id}" id="notificationButton">
+        <i class="fa fa-bell"></i>
+        ${Resource.msg('button.notify', 'common', null)}
+    </button>
+    <i class="fas fa-sms"></i>
+</div>
+
+<iscomment>
+    Form component
+</iscomment>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeButton">&times;</span>
+
+        <isset name="formHeadline" value="${contentMgr.getContent('BackInStockHeadlineModal').custom.body.markup}"
+            scope="page" />
+        <isprint value="${formHeadline}" encoding="off" />
+
+        <form action="${URLUtils.url('Twillio-Subscribe')}" class="backInStock" method="POST" name="backInStock">
+            <!--- Product id --->
+            <input type="hidden" id="productId" name="productId" class="product-id" value="${pdict.product.id}">
+
+            <!--- Phone number --->
+            <div class="row">
+                <div class="col">
+                    <div class="form-group required">
+                        <label class="form-control-label" for="backInStock">${Resource.msg('phoneNumber.label', 'common', null)}</label>
+                        <input type="tel" required class="form-control required" pattern="^\+\d{1,4}[1-9]\d{0,9}$"
+                            aria-describedby="backInStock-error" placeholder="+359999999999" id="phoneNumber"
+                            name="phoneNumber">
+                        <p class="customError" id="backInStock-error"> ${Resource.msg('invalidPhone.label', 'common', null)}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--- Submit --->
+            <div class="row">
+                <div class="col-sm-8">
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <button class="btn btn-block btn-primary subscribe-backInStock" type="submit" name="submit"
+                            value="submit">${Resource.msg('submitButton.label', 'common', null)}</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
