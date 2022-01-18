@@ -29,10 +29,10 @@ Project is created with:
 Only a specific format of phone numbers will be accepted - +359999999999
 ![Subscribe](https://user-images.githubusercontent.com/75838730/150023114-d5d4f2e0-431b-492d-a1b0-0f0566993c78.png)
 
-if the number is wrong appropriate message will be shown
+##### if the number is wrong appropriate message will be shown
 ![Error](https://user-images.githubusercontent.com/75838730/150023421-4bd42850-c8f1-4392-8563-e507ebe188ad.png)
 
-if the number is accepted you will see success message
+##### if the number is accepted you will see success message
 ![Success](https://user-images.githubusercontent.com/75838730/150023537-33b86458-fa40-47ac-9ea1-a98d36b39385.png)
 
 ### Custom object definition in the business manager
@@ -41,11 +41,11 @@ if the number is accepted you will see success message
 ### Custom object with records
 ![customObject](https://user-images.githubusercontent.com/75838730/150023825-0bbbf068-cb84-4084-a1b4-35e455fd6d1d.png)
 
-All numbers will be saved in comma separated value string
+##### All numbers will be saved in comma separated value string
 ![customObjectRecord](https://user-images.githubusercontent.com/75838730/150023837-ecc66e8d-9d1b-463b-8543-3ae481b40156.png)
 
 ### Job query in the business manager
-On every 12 hours job query should run to send SMS (with Twilio API service) to subscribers when product is back in stock
+##### On every 12 hours job query should run to send SMS (with Twilio API service) to subscribers when product is back in stock
 ![JobQuerry](https://user-images.githubusercontent.com/75838730/150024353-c0897881-186f-4b28-98c7-aa1b7ff15829.png)
 
 ## 👨‍ Author
