@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services xmlns="http://www.demandware.com/xml/impex/services/2014-09-26">
+    <service-credential service-credential-id="twillio.sendSms">
+        <url>https://api.twilio.com/2010-04-01/Accounts/ACddcf473db1d3e3ac93b90e26188daea9/Messages.json</url>
+        <user-id>some_customer_id_here</user-id>
+        <password encrypted="true" encryption-type="common.export">some_password_here</password>
+    </service-credential>
+
+    <service-profile service-profile-id="twillio.sendSms">
+        <timeout-millis>2000</timeout-millis>
+        <rate-limit-enabled>false</rate-limit-enabled>
+        <rate-limit-calls>0</rate-limit-calls>
+        <rate-limit-millis>0</rate-limit-millis>
+        <cb-enabled>true</cb-enabled>
+        <cb-calls>0</cb-calls>
+        <cb-millis>0</cb-millis>
+    </service-profile>
+
+    <service service-id="http.twillio.sendSms">
+        <service-type>HTTP</service-type>
+        <enabled>true</enabled>
+        <log-prefix>TwillioSendSms</log-prefix>
+        <comm-log-enabled>true</comm-log-enabled>
+        <force-prd-enabled>false</force-prd-enabled>
+        <mock-mode-enabled>false</mock-mode-enabled>
+        <profile-id>twillio.sendSms</profile-id>
+        <credential-id>twillio.sendSms</credential-id>
+    </service>
+
+</services>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary">    
+    <content content-id="BackInStockHeadlineModal">
+        <display-name xml:lang="x-default">Back-In-Stock-Headline-Modal</display-name>
+        <display-name xml:lang="fr-FR">Back-In-Stock-Headline-Modal</display-name>
+        <display-name xml:lang="it-IT">Back-In-Stock-Headline-Modal</display-name>
+        <display-name xml:lang="ja-JP">Back-In-Stock-Headline-Modal</display-name>
+        <display-name xml:lang="zh">Back-In-Stock-Headline-Modal</display-name>
+        <display-name xml:lang="zh-CN">Back-In-Stock-Headline-Modal</display-name>
+        <online-flag>true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="body" xml:lang="x-default">&lt;p class="h5"&gt;Please, fill your phone number to subscribe for notification&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="fr-FR">&lt;p class="h5"&gt;S'il vous plaît, remplissez votre numéro de téléphone pour vous abonner à la notification&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="it-IT">&lt;p class="h5"&gt;Per favore, inserisci il tuo numero di telefono per iscriverti alla notifica&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="ja-JP">&lt;p class="h5"&gt;通知を購読するには、電話番号を入力してください&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="zh">&lt;p class="h5"&gt;请填写您的电话号码以订阅通知&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="zh-CN">&lt;p class="h5"&gt;请填写您的电话号码以订阅通知&lt;/p&gt;</custom-attribute>
+        </custom-attributes>
+    </content>
+</library>
